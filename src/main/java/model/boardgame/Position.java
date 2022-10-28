@@ -1,4 +1,4 @@
-package model;
+package model.boardgame;
 
 public class Position {
 
