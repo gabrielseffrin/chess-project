@@ -8,6 +8,8 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
+import model.player.Player;
+
 public class HibernateUtil {
 
 	private static SessionFactory sessionFactory;
@@ -30,9 +32,7 @@ public class HibernateUtil {
 				// settings.put(Environment.HBM2DDL_AUTO, "create-drop");
 
 				configuration.setProperties(settings);
-				//configuration.addAnnotatedClass(Recipe.class);
-				//configuration.addAnnotatedClass(RecipeOwner.class);
-				// configuration.addAnnotatedClass(Administrator.class);
+				configuration.addAnnotatedClass(Player.class);
 
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 						.applySettings(configuration.getProperties()).build();
