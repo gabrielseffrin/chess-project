@@ -22,14 +22,14 @@ public class HibernateUtil {
 				Properties settings = new Properties();
 
 				settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-				settings.put(Environment.URL, "jdbc:mysql://localhost:3306/chess-project");
+				settings.put(Environment.URL, "jdbc:mysql://localhost:3306/chessmatch");
 				settings.put(Environment.USER, "covid");
 				settings.put(Environment.PASS, "febre");
 				settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
 
 				settings.put(Environment.SHOW_SQL, "true");
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-				// settings.put(Environment.HBM2DDL_AUTO, "create-drop");
+				settings.put(Environment.HBM2DDL_AUTO, "create-drop");
 
 				configuration.setProperties(settings);
 				configuration.addAnnotatedClass(Player.class);
