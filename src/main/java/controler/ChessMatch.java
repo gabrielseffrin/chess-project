@@ -1,7 +1,10 @@
 package controler;
 
 import model.boardgame.Board;
+import model.boardgame.Position;
 import model.chess.ChessPiece;
+import model.chess.King;
+import util.Color;
 
 public class ChessMatch {
 
@@ -9,6 +12,7 @@ public class ChessMatch {
 
     public ChessMatch() {
         board = new Board(8, 8);
+        initialSetup();
     }
 
     public ChessPiece[][] getPieces() {
@@ -19,5 +23,9 @@ public class ChessMatch {
             }
         }
         return mat;
+    }
+
+    private void initialSetup() {
+        board.placePiece(new King(board, Color.WHITE), new Position(2, 1));
     }
 }

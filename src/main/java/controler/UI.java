@@ -23,8 +23,8 @@ public class UI {
 
     public static String getPiece(ChessPiece piece) {
         if (piece == null) {
-            return "<div class='col'> <div class='card h-100'> <div class='card-body'>nulo</div></div></div>";
+            return "<div class='col'> <div class='card h-100'> <div class='card-body'></div></div></div>";
         }
-        return piece.getPiece();
+        return piece.toString();
     }
 }
