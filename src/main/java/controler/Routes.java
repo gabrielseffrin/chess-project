@@ -10,6 +10,10 @@ public class Routes {
         VelocityTemplateEngine engine = new VelocityTemplateEngine();
         staticFiles.location("/public");
 
+        /* index */
         get("/", Commom::pageHome, engine);
+
+        /* play */
+        post("/play", UI::readChessPosition);
     }
 }

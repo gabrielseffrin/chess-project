@@ -11,7 +11,8 @@ public class Rook extends ChessPiece {
 
     @Override
     public String toString() {
-        return "<div class='col'> <div class='card h-100'> <div class='card-body'> rook" +
+        return "<div class='col'> <div class='card h-100'> <div class='card-body' style='background-color: "
+                + getColor() + ";'> rook" +
                 "</div></div></div>";
     }
 }

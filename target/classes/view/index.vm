@@ -28,6 +28,27 @@
             $piece
             #end
 
+            <form action="">
+                <div class="mb-3 row">
+                    <label for="staticPlayer" class="col-sm-2 col-form-label">Player</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control-plaintext" id="staticPlayer"
+                            value="Player1" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-3">
+                        <label for="inputPosicao" class="col-sm-2 col-form-label">Posição</label>
+                        <input name="inputPosicao" type="text" class="form-control" id="inputPosicao"
+                            placeholder="ex: b-5" />
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="inputPeca" class="col-sm-2 col-form-label">Peça</label>
+                        <input name="inputPeca" type="text" class="form-control" id="inputPeca" placeholder="ex: R" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">jogar</button>
+            </form>
         </div>
     </main>
 </body>
