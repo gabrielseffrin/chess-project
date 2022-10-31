@@ -10,6 +10,7 @@ import spark.Response;
 public class UI {
 
     public static Object readChessPosition(Request req, Response res) {
+
         return "";
     }
 
